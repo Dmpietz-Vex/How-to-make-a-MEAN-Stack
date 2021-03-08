@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>MEAN Stack</title>
+</head>
+
+<body style="font-family:courier;">
+
+    <h1>How to build a MEAN Stack via Google Cloud Platform</h1>
+
+    <h2>Create Google Cloud Platform <a href="https://cloud.google.com">https://cloud.google.com</a></h2>
+    <ul>
+        <li><b>Step 1:</b> Sign up for Google Cloud, or sign in if you have an account already</li>
+        <li><b>Step 2:</b> Click Console -> Click Hamburger icon(on top left)</li>
+        <li><b>Step 3:</b> Go to Compute Engine -> Click VM instances</li>
+        <li><b>Step 4:</b> Click Create instance</li>
+    </ul>
+    <img src="images/16.png" alt="Create instance" style="width:600px; height:40px;">
+    <ul>
+        <li><b>Step 5:</b>
+            Name (ex:test-mean) -> region (Oregon) -> Series (First generation-N1)-> <br>
+            Machine type(f1-micro) -> Boot disk(Change) -> Operating system(Ubuntu) -> <br>
+            Version(Ubuntu 18.04 LTS) -> Select -> Firewall(check both
+            “http”,”https”) -> Create</li>
+    </ul>
+
+    <img src="images/17.png" style="width:380px; height:400px;"><br>
+    <img src="images/18.png" style="width:380px; height:400px;">
+    <ul>
+        <li><b>Sept 6:</b> Open up the shell click SSH:</li>
+    </ul>
+    <img src="images/19.png" style="width:660px; height:30px;">
+
+    <h2>Install Node. js</h2>
+    <p>1. Use the bash script to install NodeSource:<br>
+        <b><mark>curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</mark></b>
+    </p>
+    <p>2. Typing the command: <b><mark>sudo apt install -y nodejs</mark></b></p>
+    <p>3. Verify the installation by checking which version of Node.js and <br>
+        npm(node package manager)you have installed
+        on the system with the following: <br>
+        <b><mark>node -v</mark></b><br>
+        <b><mark>npm -v</mark></b>
+    </p>
+
+    <h2>Install Angular. js</h2>
+    <p>4. To install Angular.js command line interface(cli):
+        <b><mark>sudo -i npm install -g @angular/cli</mark></b>
+    </p>
+    <p>5. It will ask if you want to share data with Angular team: Typing <b><mark>N</mark></b> for no</p>
+    <p>6. To check Angular CLI version: <b><mark>ng version</mark></b></p>
+    <p>7. To see what kind of available commands there: <b><mark>ng help</mark></b> <br>
+        (if may not be possible to use them since you will need <br>
+        to have a project which is not important for our project)</p>
+
+    <h2>Open a command prompt</h2>
+    <p>8. To make directory: <b><mark>mkdir helloworld</mark></b></p>
+    <p>9. To change directory: <b><mark>cd helloworld</mark></b></p>
+
+    <h2>Initialize your project and link it to npm</h2>
+    <p>10. To initialize a project: <b><mark>npm init</mark></b></p>
+    <p>11. <b>Click enter key three times</b> to get “entry point:(index.js)”</p>
+    <p>12. Typing <b><mark>app. js</mark></b> to replace index.js</p>
+    <p>13. <b>Click enter key five times,</b> it will ask “Is this OK? (yes)”, <br>
+        click enter key one more time to get a command line</p>
+
+    <h2>Install Express. js</h2>
+    <p>14. To Install Express.js in the myapp directory and <br>
+        save it the dependencies list: <b><mark>npm install express --save</mark></b></p>
+
+
+    <h2>Start your text edit of choice and create a file named app.js</h2>
+    <p>15. Open a text editor:
+        <b><mark>nano app.js</mark></b>
+    </p>
+    <p>16. Copy and paste the following code:
+
+        <b><mark>var express = require('express'); <br>
+                var app = express(); <br>
+                app.get('/', function (req, res) { <br>
+                res.send('Hello there! Have a Great Day!!!'); <br>
+                }); <br>
+                app.listen(3000, function () { <br>
+                console.log('Example app listening on port 3000!'); <br>
+                });</mark></b>
+    </p>
+    <p>17. To exit:
+        <b><mark>ctrl X</mark></b>
+    </p>
+    <p>18. To save:
+        <b><mark>Y</mark></b>
+    </p>
+    <p>19. To go back to shell: Click
+        <b><mark>enter key</mark></b>
+    </p>
+
+    <h2>Create firewal rule</h2>
+    <p>20. Go to Google Cloud Platform</p>
+    <p>21. In the search products and resources, type <b>firewall</b> and choose Firewall(VPC network)</p>
+    <img src="images/01.png" alt="Firewall" style="width:240px; height:260px;">
+
+    <p>22. Under the search box, click <b>CREATE FIREWALL RULE</b></p>
+    <img src="images/02.png" alt="Create firewall rule" style="width:300px; height:50px;">
+    <p>23. In the <b>name</b>: Typing <b>firewall-3000</b> (3000 is a port that you will need to open on a Google Cloud
+        Platform)</p>
+    <img src="images/03.png" alt="Firewall-3000" style="width:500px; height:160px;">
+    <p>24. Change <b>Target</b> to <b>All instances in the network</b></p>
+    <img src="images/04.png" alt="All instances in the network" style="width:540px; height:70px;">
+    <p>25. In <b>Source IP ranges typing: <mark>0.0.0.0/0</mark></b></p>
+    <img src="images/05.png" alt="0.0.0.0/0" style="width:540px; height:60px;">
+    <p>26. In <b>Protocols and ports</b>(this will open port 3000): check tcp and typing <b><mark>3000</mark></b></p>
+    <img src="images/06.png" alt="3000" style="width:540px; height:60px;">
+    <p>27. Click <b>CREATE</b></p>
+    <img src="images/07.png" alt="Create" style="width:140px; height:60px;">
+    <p>28. Go to Hamburger icon -> <b>Computer Engine -> VM Instances</b></p>
+    <p>29. Click the <b>External IP</b></p>
+    <img src="images/08.png" alt="External IP" style="width:540px; height:60px;">
+    <p>30. It will show an <b>error message</b></p>
+    <img src="images/09.png" alt="Error message" style="width:260px; height:300px;">
+    <h2>Run the App</h2>
+    <p>31. Go back to <b>shell</b></p>
+    <p>32. Use command: <b><mark>node app.js</mark></b> ( It will show “ <b>Example app listening on port 3000</b>”)</p>
+    <p>33. After running the command, add <b><mark>:3000</mark></b> the end of your server’s external IP
+        EX) http://34.105.103.160:3000 (do not copy and paste example, you have to use your external IP)
+        <b>(remember do not use https)</b>
+    </p>
+    <p>34. You will see the message</p>
+    <img src="images/10.png" alt="Hello there!" style="width:420px; height:70px;">
+    <p>35. To exit the Express.js: <b><mark>ctrl c</mark></b></p>
+    <p>36. To move up one directory: <b><mark>cd ..</mark></b> (there is a space between cd and dots)</p>
+
+    <h2>Install MongDB community Edition on Ubuntu</h2>
+    <p>Use this tutorial to install MongoDB 4.4 Community Edition on LTS (long-term support) releases of Ubuntu Linux
+        using the apt package manager.
+    </p>
+    <p>37. Import the public key used by the package management system: <br>
+        <b><mark>wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</mark></b>
+    </p>
+    <p>38. Create the /etc/apt/sources.list.d/mongodb-org-4.4.list file for <b>Ubuntu 18.04 LTS(Bionic):</b><br>
+
+        <b><mark>echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu <br>
+                bionic/mongodb-org/4.4 multiverse" | sudo tee
+                /etc/apt/sources.list.d/mongodb-org-4.4.list</mark></b>
+    </p>
+    <p>39. Issue the following command to reload the local package database: <br>
+        <b><mark>sudo apt-get update</mark></b>
+    </p>
+    <p>40. To install <b>the latest stable version</b>, issue the following <br>
+        <b><mark>sudo apt-get install -y mongodb-org</mark></b>
+    </p>
+    <p>41. Optional. Although you can specify any available version of MongoDB, apt-get will upgrade<br>
+        the packages when a newer version becomes available. To prevent unintended upgrades, <br>
+        you can pin the package at the currently installed version: <br>
+        <b><mark>echo "mongodb-org hold" | sudo dpkg --set-selections <br>
+                echo "mongodb-org-server hold" | sudo dpkg --set-selections <br>
+                echo "mongodb-org-shell hold" | sudo dpkg --set-selections <br>
+                echo "mongodb-org-mongos hold" | sudo dpkg --set-selections <br>
+                echo "mongodb-org-tools hold" | sudo dpkg --set-selections</mark></b>
+    </p>
+
+    <h2>Run MongoDB Community Edition</h2>
+    <h3><b>Init System</b></h3>
+    <p>To run and manage your mongod process, you will be using your <br>
+        operating system’s built-in init system. Recent versions of Linux tend to use <br>
+        <b>systemd</b> (which uses the systemctl command), while older versions of Linux <br>
+        tend to use System V init (which uses the service command).
+    </p>
+    <p>42. If you are unsure which init system your platform uses, run the following command:<br>
+    <pre>
+
+        <b><mark>ps --no-headers -o comm 1</mark></b><br>
+        <b style="color:red;">Pay attention to the result!</b><br></pre>
+    Then select the appropriate <b>init system</b> based on the result:<br>
+    </p>
+    <ul>
+        <li><b>systemd</b> - if your result is <b>systemd,</b> go to <b>no.43 systemd(systemctl)</b>steps
+        </li>
+        <li><b>init</b> - if your result is <b>init,</b> follow the <b>System V Init(service)</b> steps <span
+                style="color:green;">(The text is highlighted in green)</span>
+        </li>
+    </ul>
+    <h3 style="color:green;">System V Init (service)</h3>
+    <p style="color:green;">1)Start MongoDB: sudo service mongod start<br>
+        2)Verify that MongoDB has started successfully : sudo service mongod status<br>
+        3)Stop MongoDB: sudo service mongod stop<br>
+        4)Restart MongoDB: sudo service mongod restart<br>
+        5)Begin Using MongoDB: mongo </p>
+
+    <h3>systemd (systemctl) steps</h3>
+    <p>43. Start MongoDB: <b><mark>sudo systemctl start mongod</mark></b></p>
+    <p>44. Verify that MongoDB has started successfully:
+        <b><mark>sudo systemctl status mongod</mark></b>
+    </p>
+    <img src="images/11.png" alt="status mongdb" style="width:700px; height:140px;">
+
+    <p>45. You can optionally ensure that MongoDB will start following a system reboot by issuing the following
+        command:<br>
+        <b><mark>sudo systemctl enable mongod</mark></b>
+    </p>
+
+    <p>46. Stop MongoDB: <b><mark>sudo systemctl stop mongod</mark></b></p>
+    <p>47. Restart MongoDB: <b><mark>sudo systemctl restart mongod</mark></b></p>
+    <p>48. Begin using MongoDB: <b><mark>mongo</mark></b></p>
+    <p>49. Returns a document that provides an overview of the database process’s state:
+        <b><mark>db.serverStatus()</mark></b>
+    </p>
+    <p>50. To exit MongoDB: <b><mark>exit</mark></b></p>
+    <h2>Insert Data into MongoDB</h2>
+    <P>(Here is additional command to test if your MongoDB is working correctly)</P>
+    <p>1. Begin using MongoDB: <b><mark>mongo</mark></b></p>
+    <img src="images/12.png" alt="mongo" style="width:540px; height:60px;">
+    <p>2. To switch to the <b>test</b> database: <b><mark>use test</mark></b><br>
+    <p></p>
+
+    <p>(If the database exists, it will switch context to that database. <br>
+        If it doesn't it will create the database and switch contexts. <br>
+        Let's create a database called "test.")</p>
+    </p>
+    <img src="images/13.png" alt="use test" style="width:280px; height:60px;">
+    <p>3. To verify that your database is now <b>“test”: <mark>db</mark></b></p>
+    <img src="images/14.png" alt="db" style="width:70px; height:70px;">
+    <p>4. Insert a Single Document:</p>
+    <p><b><mark>db.inventory.insertOne(<br>
+                   { "item" : "canvas",<br>
+                     "qty" : 100,<br>
+                     "tags" : ["cotton"],<br>
+                     "size" : { "h" : 28, "w" : 35.5, "uom" : "cm" }<br>
+                   }<br>
+                )</mark></b></p>
+
+    <p>(Unlike SQL tables, MongoDB collections have dynamic schemas. <br>
+        That is, a single collection can store documents that differ in shapes<br>
+        (i.e. contain different fields and value types).</p>
+
+    <p>5. To view the data: <b><mark>db.inventory.find()</mark></b> </p>
+    <img src="images/15.png" alt="db.inventory.find()" style="width:640px; height:40px;">
+
+    <p>6. Now that you have data, you can exit MongoDB: <b><mark>exit</mark></b></p>
+
+</body>
+
+</html>
