@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <title>Hello World</title>
+</head>
+
+<style>
+    .content {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 70px;
+    }
+</style>
+
+<body style="font-family:courier;">
+    <div class="content">
+
+
+        <h1>How to Build a 'Hello World' Web App on MEAN Stack</h1>
+        <p>1. When shell appears, you will need to install node.js, so type:curl -sL
+            https://deb.nodesource.com/setup_12.x | sudo -E bash -</p>
+        <p>2. Type down: sudo apt install -y nodejs</p>
+        <p>3. To install express.js: Type command to make a directory: mkdir helloworld </p>
+        <p>4. Type command to change directory: cd helloworld</p>
+        <p>5. Type command to initialize your project which create a package.json: npm init</p>
+        <p>6. hit enter 3 times when you get to entry point type this:app.js </p>
+        <p>7. Hit enter 5 times until you get to the entry point again</p>
+        <p>8. Type command to run express.js and save it on your project and directory: npm install express --save</p>
+        <p>9. Type command: nano app.js</p>
+        <p>10. Copy the code below and paste it to the nano:</p>
+        <p>var express = require('express'); <br>
+            var app = express(); <br>
+            app.get('/', function (req, res) { <br>
+            res.send('Hello there! Have a Great Day!!!'); <br>
+            }); <br>
+            app.listen(3000, function () { <br>
+            console.log('Example app listening on port 3000!'); <br>
+            });
+        </p>
+        <ul>
+            <li>Press ctr+x to exit</li>
+            <li>It will ask if you want to save so type y then press keyboard ‘enter’</li>
+        </ul>
+        <p>11.
+
+            Go to console of Google Cloud Platform.Go to the top that shows search symbol,Go to the top that shows
+            search symbol,There are two searches of ‘firewall rules,’ use one that is VPC network and click it</p>
+        <p>12. On the page of “Firewall rules,” go top to click CREATE FIREWALL RULE</p>
+        <image src="images/20.png">
+            <p>13. For name, type ‘firewall-3000’ (3000 is a port that you will need to open on a google cloud platform.
+                The one you had to write on nano showed the port 8080).</p>
+            <p>14. Change Targets to All instances in the network</p>
+            <p>15. On Source IP ranges, type: 0.0.0.0/0</p>
+            <p>16. On Protocols and ports, this will open port 3000: so click tcp and write: 3000</p>
+            <p>17. Click create</p>
+            <p>18. Go to the nav to find Compute Engine but don’t click and click VM Instances</p>
+            <p>19. Click the External IP of the instance’s name test-mean-stack which should show error and not working
+            </p>
+            <p>20. Now go back to shellType the command: node app.js</p>
+            <ul>
+                <li>It should show this: <image src="images/21.png">
+                </li>
+            </ul>
+            <p>21. Go to the External IP tab. Include http and 3000 to your numbers. http://00.00.000.000:3000/. You
+                already have your External IP numbers so just use http:// and 3000/. Remember not to use ‘https’.</p>
+            <p>22. To leave the express.js, click the keyboard, ‘ctr+c’ </p>
+            <p>23. Type the command to move up one directory: cd ..</p>
+            <p>24. To install MongoDB (the database), type down: sudo apt install -y mongodb</p>
+            <p>25. To check the status of MongoDB, type: sudo systemctl status mongodb</p>
+            <p>You will see what shows active: active running which means the database server is running and that you
+                are connected to MongoDB.</p>
+            <p>26. Press Ctrl+c to get a command line.
+            </p>
+            <p>27. To start MongoDB, type: sudo systemctl start mongodb
+            </p>
+            <p>28. To work with database, type: mongo
+            </p>
+            <p>29. copy the code to place some data into the database.
+            </p>
+            <p><mark>[ <br>
+                    {_id : 1, product: "IPad", price : 894.50, quantityAvailable : 13}, <br>
+                    {_id : 2, product: "Chrome Book", price : 245.99, quantityAvailable: 23}, <br>
+                    {_id : 3, product: "Bose Lap Top Speakers", price : 89.50, quantityAvailable : 10}, <br>
+                    {_id : 4, product: "Norton Anti Virus", price : 75.50, quantityAvailable : 2}, <br>
+                    {_id : 5, product: "Mechanical Keyboard", price : 125.50, quantityAvailable : 3}, <br>
+                    {_id : 6, product: "Android Tablet", price : 345.23, quantityAvailable : 5} <br>
+                    ]</mark></p>
+            <p>30. Now we will install a web app.</p>
+            <p>31. Check if node is installed on the server machine on Google Cloud <br>
+                node -v </p>
+            <p>32. Once you verified node is installed download get:sudo apt-get update</p>
+            <p>33. Install: sudo apt-get install git -y
+            </p>
+            <p>34. NEXT STEP Cloning the repo: <br>
+                git clone <a href="https://github.com/Dmpietz-Vex/Bonkai">https://github.com/Dmpietz-Vex/Bonkai</a>
+            </p>
+            <p>35. run this command: cd Bonkai</p>
+            <p>36. run this command: ls -la
+            </p>
+            <p>37. Run this command: node routes.js
+            </p>
+            <p>38. Once you get this message you're done.
+            </p>
+            <p>express has started </p>
+            <p>Mongoose connected. </p>
+            <p>Now go back to the google cloud platform and refresh your
+                “hello world” page, you should See the Bonkai web page.
+            </p>
