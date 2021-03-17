@@ -1,16 +1,17 @@
 html {
     font-family: 'Courier New', monospace;
-    background-color: #E8E8E8;
+    background-color: white;
     z-index: 1;
     margin: auto;
     height: 200%;
 }
 
 .header {
-    background-color: white;
+    background-color: #1f2833;
     text-align: center;
     padding: 20px;
-    font-size: 150%
+    font-size: 150%;
+    color: #66fcf1;
 }
 
 .topnav {
@@ -20,15 +21,16 @@ html {
 .topnav a {
     float: right;
     display: block;
-    color: black;
+    color: #1f2833;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .topnav a:hover {
-    background-color: #87CEFA;
-    color: white;
+    background-color: #66fcf1;
+    color: #1f2833;
 }
 
 
@@ -52,12 +54,118 @@ html {
     overflow: visible
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 200;
+
+
+
+
+  #rcorners5 {
+  
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
     text-align: center;
+    line-height: 200%;
+
+  }
+
+  #rcorners6 {
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+  }
+  
+  #rcorners7 {
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+  }
+  #rcorners8 {
+ 
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+  }
+  #rcorners9 {
+ 
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+
+}
+
+#rcorners10 {
+  
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+
+  }  #rcorners11 {
+  
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+
+  }  #rcorners12 {
+  
+    border: 10px solid #66fcf1;
+    padding: 10px; 
+    width: 1000px;
+    height: 100px; 
+    border-radius: 25px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    line-height: 200%;
+
+  }
+
+
+    footer {
+    
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        
 }
 
 footer li {
