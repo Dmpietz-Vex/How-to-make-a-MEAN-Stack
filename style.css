@@ -1,5 +1,5 @@
 html {
-    font-family: 'Courier New', monospace;
+    font-family: Verdana, sans-serif;
     background-color: white;
     z-index: 1;
     margin: auto;
@@ -171,4 +171,6 @@ footer li {
     float: left;
     margin-right: 50px;
     color: grey;
+    font-size: 20px;
+}
 }
