@@ -43,7 +43,7 @@ html {
 #center {
     width: 85%;
     height: auto;
-    background-color: #FFFFFF;
+    background-color: white;
     opacity: 1;
     margin-left: -42.5%;
     top: -5%;
@@ -57,25 +57,25 @@ html {
 #image1 {
     position: relative;
     left: 500px;
-    top: 35px;
+    top: 20px;
 }
 
 #image2 {
     position: relative;
     left: 500px;
-    top: 125px;
+    top: 120px;
 }
 
 #image3 {
     position: relative;
     left: 500px;
-    top: 220px;
+    top: 205px;
 }
 
 #image4 {
     position: relative;
     left: 500px;
-    top: 370px;
+    top: 350px;
 }
 
 #rcorners1 {
@@ -172,5 +172,4 @@ footer li {
     margin-right: 50px;
     color: grey;
     font-size: 20px;
-}
 }
