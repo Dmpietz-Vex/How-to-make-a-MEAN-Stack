@@ -54,116 +54,114 @@ html {
     overflow: visible
 }
 
-
-
-
-
-  #rcorners5 {
-  
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
+#image1 {
     position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-
-  }
-
-  #rcorners6 {
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-  }
-  
-  #rcorners7 {
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-  }
-  #rcorners8 {
- 
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-  }
-  #rcorners9 {
- 
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-
+    left: 500px;
+    top: 35px;
 }
 
-#rcorners10 {
+#image2 {
+    position: relative;
+    left: 500px;
+    top: 125px;
+}
+
+#image3 {
+    position: relative;
+    left: 500px;
+    top: 220px;
+}
+
+#image4 {
+    position: relative;
+    left: 500px;
+    top: 370px;
+}
+
+#rcorners1 {
+  
+    border: 10px solid transparent;
+    padding: 10px; 
+    width: 750px;
+    height: 160px; 
+    border-radius: 25px;
+    position: relative;
+    left: 650px;
+    bottom: 450px;
+    text-align:justify;
+    line-height: 120%;
+    font-size: 150%;
+
+  }  #rcorners2 {
+  
+    border: 10px solid transparent;
+    padding: 10px; 
+    width: 750px;
+    height: 160px; 
+    border-radius: 25px;
+    position: relative;
+    left: 650px;
+    bottom: 450px;
+    text-align:justify;
+    line-height: 120%;
+    font-size: 150%;
+
+  }  #rcorners3 {
+  
+    border: 10px solid transparent;
+    padding: 10px; 
+    width: 750px;
+    height: 160px; 
+    border-radius: 25px;
+    position: relative;
+    left: 650px;
+    bottom: 500px;
+    text-align:justify;
+    line-height: 120%;
+    font-size: 150%;
+  }  #rcorners4 {
+  
+    border: 10px solid transparent;
+    padding: 10px; 
+    width: 750px;
+    height: 160px; 
+    border-radius: 25px;
+    position: relative;
+    left: 650px;
+    bottom: 500px;
+    text-align:justify;
+    line-height: 120%;
+    font-size: 150%;
+  }
+
+
+  
+
+  #contacttitle {
+      text-align: center;
+      line-height: 100%;
+  }
+
+  #contact {
   
     border: 10px solid #66fcf1;
     padding: 10px; 
-    width: 1000px;
-    height: 100px; 
+    width: 700px;
+    height: 500px; 
     border-radius: 25px;
     position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-
-  }  #rcorners11 {
-  
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-
-  }  #rcorners12 {
-  
-    border: 10px solid #66fcf1;
-    padding: 10px; 
-    width: 1000px;
-    height: 100px; 
-    border-radius: 25px;
-    position: relative;
-    left: 400px;
-    text-align: center;
-    line-height: 200%;
-
+    left: 570px;
+    bottom: 350px;
+    text-align:left;
+    line-height: 250%;
+    font-size: 12px;
   }
 
 
     footer {
     
         position: absolute;
-        bottom: -100%;
+        bottom: -230%;
         width: 100%;
         
 }
