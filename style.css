@@ -109,23 +109,25 @@ html {
     border: 5px solid #1f2833;
     color: #1f2833;
     text-align: center;
-    font-size: 18px;
-    opacity: 0.6;
+ opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
     font-family: "Lucida Console", "Courier New", monospace;
     width: 150px;
-    height: 50px; 
+    height: 30px; 
 
     margin: 4px 2px;
+    font-size: 12px;
   
 
   }
 
-  .button1:hover {opacity: 1}
-
+  .button1:hover { 
+      opacity: 1;
+      
+  }
 
 
 
