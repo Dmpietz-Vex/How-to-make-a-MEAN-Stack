@@ -12,6 +12,7 @@ html {
     padding: 20px;
     font-size: 150%;
     color: #66fcf1;
+
 }
 
 .topnav {
@@ -23,9 +24,13 @@ html {
     display: block;
     color: #1f2833;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
     font-size: 18px;
+    font-family:  "Lucida Console", "Courier New", monospace;
+ 
+   
+    Tahoma, Verdana, sans-serif;
 }
 
 .topnav a:hover {
@@ -38,6 +43,9 @@ html {
     max-width: 1200px;
     margin: auto;
     padding: 100px;
+    position: relative;
+    bottom: 620px;
+
 }
 
 #center {
@@ -56,27 +64,122 @@ html {
 
 #image1 {
     position: relative;
-    left: 500px;
-    top: 20px;
+    left: 555px;
+    top: 67px;
 }
 
 #image2 {
     position: relative;
-    left: 500px;
-    top: 120px;
+    left: 753px;
+    top: -136px;
 }
 
 #image3 {
     position: relative;
-    left: 500px;
-    top: 205px;
+    left: 952px;
+    top: -338px;
 }
 
 #image4 {
     position: relative;
-    left: 500px;
-    top: 350px;
+    left: 1150px;
+    top: -540px;
 }
+
+
+.button1 {
+    background-color: #66fcf1;
+    border: 5px solid #1f2833;
+    color: #1f2833;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 150px;
+    height: 80px; 
+    position: relative;
+    left: 460px;
+    bottom: 570px;
+
+  }
+
+  .button2 {
+    background-color: #66fcf1;
+    border: 5px solid #1f2833;
+    color: #1f2833;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 150px;
+    height: 80px; 
+    position: relative;
+    left: 300px;
+    bottom: 396px;
+
+  }
+  .button3 {
+    background-color: #66fcf1;
+    border: 5px solid #1f2833;
+    color: #1f2833;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 150px;
+    height: 80px; 
+    position: relative;
+    left: 140px;
+    bottom: 250px;
+
+  }
+  .button4 {
+    background-color: #66fcf1;
+    border: 5px solid #1f2833;
+    color: #1f2833;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 150px;
+    height: 80px; 
+    position: relative;
+    left: -20px;
+    bottom: 65px;
+
+  }
+  
+  .button1:hover {opacity: 1}
+  .button2:hover {opacity: 1}
+  .button3:hover {opacity: 1}
+  .button4:hover {opacity: 1}
+
+
+
 
 #rcorners1 {
   
@@ -87,7 +190,7 @@ html {
     border-radius: 25px;
     position: relative;
     left: 650px;
-    bottom: 450px;
+    bottom: 700px;
     text-align:justify;
     line-height: 120%;
     font-size: 150%;
@@ -101,7 +204,7 @@ html {
     border-radius: 25px;
     position: relative;
     left: 650px;
-    bottom: 450px;
+    bottom: 750px;
     text-align:justify;
     line-height: 120%;
     font-size: 150%;
@@ -115,7 +218,7 @@ html {
     border-radius: 25px;
     position: relative;
     left: 650px;
-    bottom: 500px;
+    bottom: 830px;
     text-align:justify;
     line-height: 120%;
     font-size: 150%;
@@ -128,7 +231,7 @@ html {
     border-radius: 25px;
     position: relative;
     left: 650px;
-    bottom: 500px;
+    bottom: 870px;
     text-align:justify;
     line-height: 120%;
     font-size: 150%;
@@ -151,25 +254,16 @@ html {
     border-radius: 25px;
     position: relative;
     left: 570px;
-    bottom: 350px;
+    bottom: 750px;
     text-align:left;
     line-height: 250%;
     font-size: 12px;
   }
 
 
-    footer {
-    
-        position: absolute;
-        bottom: -230%;
-        width: 100%;
-        
-}
+  .footer {
+    position: relative;
+    color: gray;
+    text-align: left;
 
-footer li {
-    list-style-type: none;
-    float: left;
-    margin-right: 50px;
-    color: grey;
-    font-size: 20px;
-}
+ }
