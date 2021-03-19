@@ -30,7 +30,6 @@ html {
     font-family:  "Lucida Console", "Courier New", monospace;
  
    
-    Tahoma, Verdana, sans-serif;
 }
 
 .topnav a:hover {
@@ -38,15 +37,32 @@ html {
     color: #1f2833;
 }
 
+#image1 {
+    display: block;
+    margin: auto;
+    width: 800px; 
+    height: 100px;
+}
+
 
 .content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 100px;
-    position: relative;
-    bottom: 620px;
+    position: center;
+  
+     
+    }
 
-}
+    .content1 {
+
+        
+            margin: 100px 0;
+          
+    }
+
+
+
 
 #center {
     width: 85%;
@@ -62,183 +78,9 @@ html {
     overflow: visible
 }
 
-#image1 {
-    position: relative;
-    left: 555px;
-    top: 67px;
-}
-
-#image2 {
-    position: relative;
-    left: 753px;
-    top: -136px;
-}
-
-#image3 {
-    position: relative;
-    left: 952px;
-    top: -338px;
-}
-
-#image4 {
-    position: relative;
-    left: 1150px;
-    top: -540px;
-}
-
-
-.button1 {
-    background-color: #66fcf1;
-    border: 5px solid #1f2833;
-    color: #1f2833;
-    padding: 14px 10px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Lucida Console", "Courier New", monospace;
-    width: 150px;
-    height: 80px; 
-    position: relative;
-    left: 460px;
-    bottom: 570px;
-
-  }
-
-  .button2 {
-    background-color: #66fcf1;
-    border: 5px solid #1f2833;
-    color: #1f2833;
-    padding: 14px 10px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Lucida Console", "Courier New", monospace;
-    width: 150px;
-    height: 80px; 
-    position: relative;
-    left: 300px;
-    bottom: 396px;
-
-  }
-  .button3 {
-    background-color: #66fcf1;
-    border: 5px solid #1f2833;
-    color: #1f2833;
-    padding: 14px 10px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Lucida Console", "Courier New", monospace;
-    width: 150px;
-    height: 80px; 
-    position: relative;
-    left: 140px;
-    bottom: 250px;
-
-  }
-  .button4 {
-    background-color: #66fcf1;
-    border: 5px solid #1f2833;
-    color: #1f2833;
-    padding: 14px 10px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: "Lucida Console", "Courier New", monospace;
-    width: 150px;
-    height: 80px; 
-    position: relative;
-    left: -20px;
-    bottom: 65px;
-
-  }
-  
-  .button1:hover {opacity: 1}
-  .button2:hover {opacity: 1}
-  .button3:hover {opacity: 1}
-  .button4:hover {opacity: 1}
 
 
 
-
-#rcorners1 {
-  
-    border: 10px solid transparent;
-    padding: 10px; 
-    width: 750px;
-    height: 160px; 
-    border-radius: 25px;
-    position: relative;
-    left: 650px;
-    bottom: 700px;
-    text-align:justify;
-    line-height: 120%;
-    font-size: 150%;
-
-  }  #rcorners2 {
-  
-    border: 10px solid transparent;
-    padding: 10px; 
-    width: 750px;
-    height: 160px; 
-    border-radius: 25px;
-    position: relative;
-    left: 650px;
-    bottom: 750px;
-    text-align:justify;
-    line-height: 120%;
-    font-size: 150%;
-
-  }  #rcorners3 {
-  
-    border: 10px solid transparent;
-    padding: 10px; 
-    width: 750px;
-    height: 160px; 
-    border-radius: 25px;
-    position: relative;
-    left: 650px;
-    bottom: 830px;
-    text-align:justify;
-    line-height: 120%;
-    font-size: 150%;
-  }  #rcorners4 {
-  
-    border: 10px solid transparent;
-    padding: 10px; 
-    width: 750px;
-    height: 160px; 
-    border-radius: 25px;
-    position: relative;
-    left: 650px;
-    bottom: 870px;
-    text-align:justify;
-    line-height: 120%;
-    font-size: 150%;
-  }
-
-
-  
 
   #contacttitle {
       text-align: center;
@@ -249,15 +91,16 @@ html {
   
     border: 10px solid #66fcf1;
     padding: 10px; 
-    width: 700px;
-    height: 510px; 
+    width: 500px;
+    height: 600px; 
     border-radius: 25px;
-    position: relative;
-    left: 570px;
-    bottom: 750px;
     text-align:left;
     line-height: 250%;
     font-size: 12px;
+    position: center;
+    margin: auto;
+
+
   }
 
 
@@ -265,5 +108,5 @@ html {
     position: relative;
     color: gray;
     text-align: left;
-
+font-size: 12px;
  }
